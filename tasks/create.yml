@@ -6,6 +6,7 @@
     mode: "600"
     owner: "{{ openssl_file_owner }}"
     group: "{{ openssl_file_group }}"
+  loop: "{{ openssl_items }}"
 
 #- name: create | Create ssl csr
 #  community.crypto.openssl_csr:
